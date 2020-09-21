@@ -46,7 +46,7 @@
                     </div>
                   </a-card-meta>
                   <div class="project-item">
-                    <a href="/#/">华清软件网格化组</a>
+                    <a href="/#/">局域网组</a>
                     <span class="datetime">1小时前</span>
                   </div>
                 </a-card>

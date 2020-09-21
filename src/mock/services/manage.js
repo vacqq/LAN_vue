@@ -42,7 +42,7 @@ const projects = () => {
       id: 1,
       cover: 'https://gw.alipayobjects.com/zos/rmsportal/ComBAopevLwENQdKWiIn.png',
       title: '老李软件',
-      description: '网格化平台开发，正在进行中',
+      description: '局域网平台开发，正在进行中',
       status: 1,
       updatedAt: '2020-08-7 00:00:00'
     },
@@ -62,7 +62,7 @@ const activity = () => {
       avatar: 'https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png'
     },
     project: {
-      name: '华清软件网格化组',
+      name: '局域网组',
       action: '更新',
       event: '首页显示'
     },
@@ -75,7 +75,7 @@ const activity = () => {
       avatar: 'https://gw.alipayobjects.com/zos/rmsportal/jZUIxmJycoymBprLOUbT.png'
     },
     project: {
-      name: '华清软件网格化组',
+      name: '局域网组',
       action: '更新',
       event: '热力图'
     },

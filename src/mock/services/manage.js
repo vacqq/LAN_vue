@@ -42,7 +42,7 @@ const projects = () => {
       id: 1,
       cover: 'https://gw.alipayobjects.com/zos/rmsportal/ComBAopevLwENQdKWiIn.png',
       title: '老李软件',
-      description: '局域网平台开发，正在进行中',
+      description: 'JAMS监控系统开发，正在进行中',
       status: 1,
       updatedAt: '2020-08-7 00:00:00'
     },

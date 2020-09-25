@@ -34,6 +34,23 @@ export const asyncRouterMap = [
         ]
       },
 
+      // map
+      {
+        path: '/gridding/map/SiteMap',
+        name: 'griddingSiteMap',
+        redirect: '/gridding/map/SiteMap',
+        component: RouteView,
+        meta: { title: '在线监测', icon: 'environment' },
+        children: [
+          {
+            path: '/gridding/map/OnlineDevice',
+            name: 'OnlineDevice',
+            component: () => import('@/views/gridding/map/OnlineDevice'),
+            meta: { title: '在线设备', keepAlive: true }
+          },
+        ]
+      },
+
       // analysis
       {
         path: '/gridding/analysis',
@@ -52,54 +69,18 @@ export const asyncRouterMap = [
             path: '/gridding/analysis/analysisSiteRank',
             name: 'analysisSiteRank',
             component: () => import('@/views/gridding/analysis/analysisSiteRank'),
-            meta: { title: '站点排名分析', keepAlive: true }
+            meta: { title: '用户使用时长统计', keepAlive: true }
           },
           {
             path: '/gridding/analysis/analysisAllTrend',
             name: 'analysisAllTrend',
             component: () => import('@/views/gridding/analysis/analysisAllTrend'),
-            meta: { title: '综合趋势分析', keepAlive: true }
+            meta: { title: '流量占比分析', keepAlive: true }
           },
-          {
-            path: '/gridding/analysis/analysisPlaceTrend',
-            name: 'analysisPlaceTrend',
-            component: () => import('@/views/gridding/analysis/analysisPlaceTrend'),
-            meta: { title: '区域趋势分析', keepAlive: true }
-          },
-          {
-            path: '/gridding/analysis/analysisSiteRelevance',
-            name: 'analysisSiteRelevance',
-            component: () => import('@/views/gridding/analysis/analysisSiteRelevance'),
-            meta: { title: '站点相关分析', keepAlive: true }
-          }
-          ,
-
 
         ]
       },
 
-      // warning
-      {
-        path: '/gridding/warning/warningDetail',
-        name: 'warning',
-        redirect: '/gridding/warning/warningDetail',
-        component: RouteView,
-        meta: { title: '报警管理', icon: 'warning' },
-        children: [
-          {
-            path: '/gridding/warning/warningDetail',
-            name: 'warningDetail',
-            component: () => import('@/views/gridding/warning/warningDetail'),
-            meta: { title: '报警数据', keepAlive: true }
-          },
-          {
-            path: '/gridding/warning/warningRule',
-            name: 'warningRule',
-            component: () => import('@/views/gridding/warning/warningRule'),
-            meta: { title: '报警规则配置', keepAlive: true, permission: ['SiteManage'] }
-          }
-        ]
-      },
 
       {
         path: '/gridding/systemManage/userManage',
@@ -114,12 +95,6 @@ export const asyncRouterMap = [
             component: () => import('@/views/gridding/systemManage/userManage'),
             meta: { title: '用户管理', keepAlive: true }
           },
-          {
-            path: '/gridding/manage/SiteManage',
-            name: 'SiteManage',
-            component: () => import('@/views/gridding/manage/SiteManage'),
-            meta: { title: '站点信息管理', keepAlive: true }
-          }
         ]
       },
 

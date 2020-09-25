@@ -4,15 +4,6 @@
       <a-spin :spinning="spinning" size="large">
         <a-row :gutter="24">
           <a-col :md="24" :lg="17">
-            <el-cascader v-model="value" :placeholder="father_show" :options="tree_options" @change="handleChange_tree">
-            </el-cascader>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <el-select v-model="site_type" placeholder="请选择" @change="SelectSiteType()">
-              <el-option v-for="item in site_type_options" :key="item.site_type" :label="item.label"
-                :value="item.site_type">
-              </el-option>
-            </el-select>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             刷新：
             <el-select v-model="brush_type" @change="SelectSiteType">
               <el-option v-for="item in brush_type_options" :key="item.brush_type" :label="item.label"
@@ -123,39 +114,22 @@ export default {
       //排名表格表头
       Show_columns: [
         {
-          title: '站点名称',
-          dataIndex: 'site_name',
+          title: '用户名称',
+          dataIndex: 'user_name',
           scopedSlots: { customRender: 'name' },
         },
         {
-          title: '站点类型',
-          dataIndex: 'site_type',
+          title: '访问类型',
+          dataIndex: 'type_name',
         },
         {
-          title: 'PM2.5',
-          dataIndex: 'pm25',
+          title: '时间',
+          dataIndex: 'record_time',
         },
         {
-          title: 'PM10',
-          dataIndex: 'pm10',
+          title: '数据包大小',
+          dataIndex: 'use_num',
         },
-        {
-          title: 'SO2',
-          dataIndex: 'so2',
-        },
-        {
-          title: 'NO2',
-          dataIndex: 'no2',
-        },
-        {
-          title: 'CO',
-          dataIndex: 'co',
-        }
-        ,
-        {
-          title: 'O3',
-          dataIndex: 'o3',
-        }
       ],
 
     }
@@ -163,7 +137,6 @@ export default {
   created () {
   },
   mounted: function () {
-    this.place_ready('2');//展示河北省数据
     this.get_time();
     this.getOnlineDeviceData();
     this.dataRefreh();

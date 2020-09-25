@@ -5,7 +5,7 @@
         <div class="header">
           <a href="/">
             <img src="~@/assets/grid.png" class="logo" alt="logo">
-            <span class="title">局域网平台</span>
+            <span class="title">JAMS监控系统</span>
           </a>
         </div>
         <div class="desc">

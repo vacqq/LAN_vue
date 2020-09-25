@@ -74,14 +74,10 @@
         <a-col style="padding: 0 12px" :xl="8" :lg="24" :md="24" :sm="24" :xs="24">
           <a-card title="快速开始 / 便捷导航" style="margin-bottom: 24px" :bordered="false" :body-style="{padding: 0}">
             <div class="item-group">
-              <a @click="onForgeStepCode('/gridding/map/SiteMap')">全站点数据</a>
-              <a @click="onForgeStepCode('/gridding/map/gridMap')">网格化数据</a>
+              <a @click="onForgeStepCode('/gridding/map/SiteMap')">用户使用时长统计</a>
+              <a @click="onForgeStepCode('/gridding/map/gridMap')">流量占比分析</a>
               <a @click="onForgeStepCode('/gridding/map/OnlineDevice')">在线设备</a>
               <a @click="onForgeStepCode('/gridding/analysis/historyData')">历史数据</a>
-              <a @click="onForgeStepCode('/gridding/analysis/analysisSiteRank')">站点排名分析</a>
-              <a @click="onForgeStepCode('/gridding/analysis/analysisAllTrend')">综合趋势分析</a>
-              <a @click="onForgeStepCode('/gridding/analysis/analysisPlaceTrend')">区域趋势分析</a>
-              <a @click="onForgeStepCode('/gridding/warning/warningDetail')">报警管理</a>
               <!-- <a-button size="small" type="primary" ghost icon="plus">添加</a-button> -->
             </div>
           </a-card>
